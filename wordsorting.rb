@@ -1,5 +1,5 @@
 def word_sorting (sentence)
-	sentence.gsub(/[^a-z ]/i,'').split.sort_by { |word| word.downcase }
+	sentence.split.sort_by { |word| word.downcase.gsub(/[^a-z ]/i,'')	 }
 end
 
 puts "What's your phrase Jedi Master?"
